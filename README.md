@@ -1,26 +1,61 @@
-# 🏦 Banking Customer & Financial Analytics
+# Banking Customer & Financial Analytics
 
 ## 📊 Project Overview
 
-An interactive banking analytics dashboard built using Microsoft Power BI and Excel to analyze customer profiles, loans, deposits, savings, credit card balances, income, loyalty, and financial performance.
+An interactive banking analytics project using Microsoft Power BI and
+Excel to analyze customer profiles, banking relationships, loans,
+deposits, savings, credit card balances, income, loyalty and financial
+performance.
 
-The dashboard provides an interactive view of banking customers and financial metrics across multiple analytical areas, including loan analysis, deposit analysis, customer summary, and customer-level drill-through analysis.
+The dashboard analyzes approximately 3,000 customer records to provide
+insights into customer demographics, lending activity, deposit behavior,
+financial products and individual customer profiles.
 
 ---
 
-## 🎯 Business Objective
+## 📂 Dataset
 
-The dashboard provides insights into:
+This project uses a banking customer dataset containing approximately
+3,000 customer records.
 
-- Customer demographics and financial profiles
+The dataset contains information related to:
+
+- Customer demographics
+- Age and gender
+- Nationality
+- Occupation
+- Income
 - Banking relationships
-- Loan distribution and lending activity
-- Deposit and savings performance
+- Loyalty classification
+- Loans
+- Deposits
+- Savings accounts
+- Checking accounts
+- Foreign currency accounts
 - Credit card balances
-- Customer income segments
-- Customer loyalty classifications
-- Customer financial behavior
-- Individual customer financial profiles
+- Business lending
+- Properties owned
+- Risk weighting
+
+The source Excel dataset is included in the repository under:
+
+`data/Banking Dashboard data.xlsx`
+
+---
+
+## 🎯 Business Questions
+
+- How many customers are included in the banking portfolio?
+- What is the overall loan exposure?
+- What is the total deposit balance?
+- How are loans distributed across banking relationships?
+- Which nationalities contribute the highest loan exposure?
+- How does income relate to loan activity?
+- How are customers distributed across loyalty classifications?
+- How do customers use different financial products?
+- How do deposits and savings vary across customer segments?
+- How do customer financial profiles differ by demographics?
+- What financial information is associated with individual customers?
 
 ---
 
@@ -30,50 +65,76 @@ The dashboard provides insights into:
 - DAX
 - Power Query
 - Microsoft Excel
+- Data Modeling
 - Data Visualization
 - Business Intelligence
+- Git/GitHub
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Data Workflow
 
-```text
-Excel Dataset
-      ↓
+Banking Excel Dataset
+        ↓
 Data Preparation
-      ↓
+        ↓
 Power BI Data Model
-      ↓
+        ↓
 DAX Measures & Calculations
-      ↓
+        ↓
 Interactive Visualizations
-      ↓
+        ↓
 Banking Analytics Dashboard
+        ↓
+Customer-Level Drill-Through
 
 ---
 
-## ✨ Dashboard Features
+## 🧹 Data Preparation
 
-- Interactive KPI cards
-- Customer demographic analysis
-- Loan and lending analysis
-- Deposit and savings analysis
-- Income-based customer analysis
-- Loyalty classification
-- Interactive filters and slicers
-- Multi-page Power BI navigation
-- Customer-level drill-through analysis
-- Financial product analysis
+The banking dataset was prepared for analysis and visualization using
+Power BI and Power Query.
+
+The data preparation and modeling process includes:
+
+- Reviewing dataset structure and data types
+- Preparing customer demographic fields
+- Organizing banking relationship information
+- Preparing financial metrics
+- Structuring loan and deposit fields
+- Preparing savings and checking account information
+- Organizing customer loyalty classifications
+- Preparing fields for interactive filtering
+- Building relationships required for dashboard analysis
+- Creating calculated measures for financial KPIs
+
+### Key Analytical Metrics
+
+- Total Customers
+- Total Loans
+- Total Deposits
+- Total Fees
+- Credit Card Balance
+- Savings Balance
+- Bank Loan
+- Business Lending
+- Customer Income
+- Customer Financial Products
+- Risk Weighting
+- Loyalty Classification
 
 ---
 
-# 📈 Dashboard Pages
+# 📊 Power BI Dashboard
+
+The dashboard contains five analytical pages.
 
 ## 1. Home
 
-The Home page provides a high-level overview of the banking portfolio.
+The Home page provides a high-level overview of the banking portfolio
+and customer financial activity.
 
-### Key Metrics
+### Key KPIs
 
 - Total Customers
 - Total Loans
@@ -89,15 +150,19 @@ The Home page provides a high-level overview of the banking portfolio.
 - Banking Relationship
 - Investment Advisor
 
+The page provides an overall view of customer and financial metrics
+before moving into detailed loan, deposit and customer analysis.
+
 ![Home Dashboard](docs/home.png)
 
 ---
 
 ## 2. Loan Analysis
 
-The Loan Analysis page focuses on lending activity and customer loan behavior.
+The Loan Analysis page focuses on lending activity and customer loan
+behavior.
 
-### Analysis Includes
+### Key Analysis
 
 - Bank Loan by Banking Relationship
 - Bank Loan by Nationality
@@ -106,6 +171,10 @@ The Loan Analysis page focuses on lending activity and customer loan behavior.
 - Bank Loan
 - Business Lending
 - Credit Card Balance
+- Loan distribution across customer segments
+
+The page allows loan exposure to be explored across customer
+characteristics and banking relationships.
 
 ![Loan Analysis](docs/loan-analysis.png)
 
@@ -113,16 +182,21 @@ The Loan Analysis page focuses on lending activity and customer loan behavior.
 
 ## 3. Deposit Analysis
 
-The Deposit Analysis page focuses on customer deposits and savings products.
+The Deposit Analysis page focuses on customer deposits and savings
+products.
 
-### Analysis Includes
+### Key Analysis
 
 - Total Deposits
 - Savings Accounts
 - Checking Accounts
 - Foreign Currency Accounts
-- Deposit Distribution
-- Customer Financial Segments
+- Deposit distribution
+- Customer financial segments
+- Deposit-related customer analysis
+
+The page provides an overview of how customers use different deposit
+and savings products.
 
 ![Deposit Analysis](docs/deposit-analysis.png)
 
@@ -130,16 +204,21 @@ The Deposit Analysis page focuses on customer deposits and savings products.
 
 ## 4. Customer Summary
 
-The Customer Summary page provides insights into customer characteristics and financial relationships.
+The Customer Summary page focuses on customer characteristics,
+financial profiles and banking relationships.
 
-### Analysis Includes
+### Key Analysis
 
-- Customer Demographics
-- Income
-- Loyalty Classification
-- Banking Relationship
-- Financial Product Usage
-- Customer-Level Financial Metrics
+- Customer demographics
+- Customer income
+- Loyalty classification
+- Banking relationship
+- Financial product usage
+- Customer financial metrics
+- Customer segmentation
+
+The page provides a broader view of customer behavior and financial
+relationships across the banking portfolio.
 
 ![Customer Summary](docs/summary.png)
 
@@ -147,94 +226,78 @@ The Customer Summary page provides insights into customer characteristics and fi
 
 ## 5. Customer Drill-Through
 
-The Drill-Through page provides a detailed view of an individual customer.
+The Drill-Through page provides a detailed customer-level view.
 
-### Customer-Level Information
+### Customer-Level Analysis
 
-- Income
+- Customer income
 - Loans
 - Deposits
 - Savings
-- Credit Card Balance
-- Financial Products
-- Customer Classification
-- Other Available Banking Metrics
+- Credit card balance
+- Financial products
+- Customer classification
+- Banking relationship
+- Other available customer financial metrics
+
+The drill-through functionality allows users to move from summary
+analysis to a more detailed individual customer profile.
 
 ![Customer Drill-Through](docs/drill-through.png)
 
 ---
 
-# 📊 Key KPIs
+# 💡 Key Business Insights
 
-| KPI | Description |
-|---|---|
-| Total Customers | Number of customers in the dataset |
-| Total Loans | Overall loan exposure |
-| Total Deposits | Total customer deposits |
-| Total Fees | Banking fees |
-| Credit Card Balance | Total credit card balance |
-| Savings Balance | Total savings account balance |
+### 1. Customer Portfolio
 
----
+The dataset contains approximately 3,000 customer records, allowing
+customer demographics and financial activity to be analyzed at both
+portfolio and individual-customer levels.
 
-# 🔍 Key Analytical Areas
+### 2. Loan Exposure
 
-## Customer Analysis
+Loan activity can be analyzed across banking relationships,
+nationalities and income bands to understand differences in lending
+exposure across customer segments.
 
-Customer information is analyzed across:
+### 3. Deposit & Savings Behavior
 
-- Age
-- Gender
-- Nationality
-- Occupation
-- Income
-- Loyalty Classification
-- Banking Relationship
+Customer deposits can be examined alongside savings, checking and
+foreign currency accounts to understand the usage of different
+financial products.
 
-## Loan Analysis
+### 4. Customer Loyalty
 
-Loan activity is analyzed across:
+Loyalty classification provides a way to segment customers and
+compare their financial relationships and product usage.
 
-- Banking Relationship
-- Nationality
-- Income Bands
-- Customer Segments
-- Business Lending
-- Credit Card Balances
+### 5. Customer Financial Profiles
 
-## Deposit Analysis
-
-Deposit-related analysis covers:
-
-- Bank Deposits
-- Savings Accounts
-- Checking Accounts
-- Foreign Currency Accounts
-- Customer Financial Profiles
+The combination of income, loans, deposits, savings, credit card
+balances and other financial products provides a broader view of
+individual customer financial profiles.
 
 ---
 
-# 📁 Dataset
+# 📌 Business Recommendations
 
-The project uses a banking customer dataset containing approximately 3,000 customer records.
-
-The dataset contains information related to:
-
-- Customer Demographics
-- Banking Relationships
-- Income
-- Loans
-- Deposits
-- Savings
-- Credit Cards
-- Business Lending
-- Properties Owned
-- Risk Weighting
-- Loyalty Classification
+- Monitor loan exposure across different customer segments.
+- Analyze income and lending relationships when evaluating customer
+  financial profiles.
+- Identify customer segments with higher deposit and savings activity.
+- Use loyalty classifications to understand differences in customer
+  financial-product usage.
+- Monitor credit card balances alongside other customer financial
+  products.
+- Use customer-level drill-through analysis to investigate individual
+  financial profiles.
+- Compare customer demographics with financial activity to identify
+  meaningful portfolio patterns.
 
 ---
 
-# 📂 Repository Structure
+# 📁 Project Structure
 
 ```text
 Banking-Customer-Financial-Analytics/
