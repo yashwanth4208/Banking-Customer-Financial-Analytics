@@ -2,14 +2,9 @@
 
 ## 📊 Project Overview
 
-An interactive banking analytics dashboard built using Microsoft Power BI
-and Excel to analyze customer profiles, loans, deposits, savings,
-credit card balances, income, loyalty, and financial performance.
+An interactive banking analytics dashboard built using Microsoft Power BI and Excel to analyze customer profiles, loans, deposits, savings, credit card balances, income, loyalty, and financial performance.
 
-The dashboard provides an interactive view of banking customers and
-financial metrics across multiple analytical areas, including loan
-analysis, deposit analysis, customer summary, and customer-level
-drill-through analysis.
+The dashboard provides an interactive view of banking customers and financial metrics across multiple analytical areas, including loan analysis, deposit analysis, customer summary, and customer-level drill-through analysis.
 
 ---
 
